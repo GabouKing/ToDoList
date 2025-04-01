@@ -5,7 +5,9 @@ import com.gk.todolist.core.model.Task;
 import com.gk.todolist.infra.model.TaskEntity;
 import com.gk.todolist.infra.repository.TaskRepository;
 import com.gk.todolist.infra.util.TaskHelper;
+import org.springframework.stereotype.Service;
 
+@Service
 public class UpdateTaskGatewayImpl implements UpdateTaskGateway {
     private final TaskRepository taskRepository;
     private final TaskHelper taskHelper;

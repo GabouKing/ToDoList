@@ -27,7 +27,7 @@ public class CreateTaskGatewayImpl implements CreateTaskGateway {
         taskEntity.setDescription(task.getDescription());
         taskEntity.setCreatedAt(LocalDate.now());
         taskEntity.setTitle(task.getTitle());
-        taskEntity.setCompleted(task.isCompleted());
+        taskEntity.setIsCompleted(task.getIsCompleted());
         TaskEntity result = taskRepository.save(taskEntity);
         return  taskHelper.convertEntityToTask(result);
     }

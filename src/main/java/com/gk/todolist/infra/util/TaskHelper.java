@@ -12,7 +12,7 @@ public class TaskHelper {
                 entity.getId(),
                 entity.getTitle(),
                 entity.getDescription(),
-                entity.isCompleted(),
+                entity.getIsCompleted(),
                 entity.getCreatedAt()
         );
     }
@@ -23,7 +23,7 @@ public class TaskHelper {
                 task.getId(),
                 task.getTitle(),
                 task.getDescription(),
-                task.isCompleted(),
+                task.getIsCompleted(),
                 task.getCreatedAt()
         );
     }
