@@ -20,7 +20,7 @@ public class TaskEntity {
     private Long id;
     private String title;
     private String description;
-    private boolean isCompleted;
+    private Boolean isCompleted;
     private LocalDate createdAt;
 }
 
